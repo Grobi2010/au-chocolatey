@@ -5,3 +5,5 @@ SQLServer
 .librarian
 .tmp
 packages
+update_vars.ps1
+*.nupkg
