@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://mqttfx.org/</projectUrl>
     <iconUrl>http://mqttfx.jensd.de/images/MQTTfx_icon_256.png</iconUrl>
-    <copyright>2019</copyright>
+    <!--<copyright>2019</copyright>-->
     <!-- If there is a license Url available, it is required for the community feed -->
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0.html</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
