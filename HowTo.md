@@ -10,3 +10,5 @@ test-package -uninstall
 
 #bring VM back to start
 vagrant sandbox rollback
+
+update_all 

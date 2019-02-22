@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Read this before creating packages: https://chocolatey.org/docs/create-packages -->
+<!-- It is especially important to read the above link to understand additional requirements when publishing packages to the community feed aka dot org (https://chocolatey.org/packages). -->
+
+<!-- Test your packages in a test environment: https://github.com/chocolatey/chocolatey-test-environment -->
+
+<!--
+This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Reference. Chocolatey uses a special version of NuGet.Core that allows us to do more than was initially possible. As such there are certain things to be aware of:
+
+* the package xmlns schema url may cause issues with nuget.exe
+* Any of the following elements can ONLY be used by choco tools - projectSourceUrl, docsUrl, mailingListUrl, bugTrackerUrl, packageSourceUrl, provides, conflicts, replaces 
+* nuget.exe can still install packages with those elements but they are ignored. Any authoring tools or commands will error on those elements 
+-->
+
+<!-- You can embed software files directly into packages, as long as you are not bound by distribution rights. -->
+<!-- * If you are an organization making private packages, you probably have no issues here -->
+<!-- * If you are releasing to the community feed, you need to consider distribution rights. -->
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <!-- This section is about this package, although id and version have ties back to the software -->
+    <!-- id is lowercase and if you want a good separator for words, use '-', not '.'. Dots are only acceptable as suffixes for certain types of packages, e.g. .install, .portable, .extension, .template -->
+    <!-- If the software is cross-platform, attempt to use the same id as the debian/rpm package(s) if possible. -->
+    <id>personalbackup</id>
+    <!-- version should MATCH as closely as possible with the underlying software -->
+    <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
+    <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
+    <version>6.0.104.20190221</version>
+    <packageSourceUrl>https://github.com/Grobi2010/chocolatey-packages/tree/master/automatic/personalbackup</packageSourceUrl>
+    <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
+    <owners>Grobi</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <!-- This section is about the software itself -->
+    <title>personalbackup (Install)</title>
+    <authors>Dr. Jürgen Rathlev</authors>
+    <!-- projectUrl is required for the community feed -->
+    <projectUrl>http://personal-backup.rathlev-home.de</projectUrl>
+    <iconUrl>http://personal-backup.rathlev-home.de/images/pb-button.png</iconUrl>
+    <copyright>2014-2018</copyright>
+    <!-- If there is a license Url available, it is required for the community feed -->
+    <licenseUrl>http://personal-backup.rathlev-home.de/license.html</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
+    <docsUrl>http://personal-backup.rathlev-home.de/help-en/pb-inhalt.html</docsUrl>
+    <!--<mailingListUrl></mailingListUrl>-->
+    <!--<bugTrackerUrl></bugTrackerUrl>-->
+    <tags>personal backup data restore security admin</tags>
+    <summary>Personal Backup is a program for saving personal data to any destination folder.</summary>
+    <description>Personal Backup is a program for saving personal data to any destination folder. This folder may be located on a local fixed or removable drive, on a Windows network server or on an FTP server. The 32-bit version runs under Windows 7, 8 and 10 (32- and 64-bit), Windows Vista, Windows XP and Windows Server 2003/2008(R2)/2012(R2), the 64-bit only under Windows 7,8 and 10 (64-bit) and Windows Server 2008(R2)/2012(R2).
+ You can configure and store as many backup tasks as you wish. The selection of the files to be backed up is made on a by-folder basis. All subfolders are included automatically, but the user can exclude or include any subdirectories from or in the backup by selection or by filter. Additional criteria are the selection by file type, file age and/or file name filter.
+At the destination folder the original drives (C:, D:, etc.) appear as subdirectories named LwC, LwD, etc. The original directory structure remains unchanged beneath these folders. All files may be compressed in gzip, either in toto or separated by subfolders as zip files. Optionally all data can be AES algorythm-encrypted.
+Performing the backup can be done manually or automatically. During the backup the program checks whether the file to be saved is newer than one already backed up. Only new files and files with newer timestamps are saved. An alternate criteria is the archive bit of the files.
+Automatic backups can be started on logon, at a selectable time of day, on logoff or on shutdown. You can make scheduled backups with destination paths changing daily or weekly.
+For individual schedules it is easy to start a backup using the Windows Task Scheduler and the command line options of the program.</description>
+    <releaseNotes>In addition to the well-known features there are the following improvements:
+
+New interface to the Windows Task Scheduler supporting the extended options available for Windows 7,8 and 10
+An automatic backup at a specified time of day can be restricted to selected days of the week.
+With backups at logon/logoff on selected days of the week, the option of catching up on missed starts can be disabled.
+On backups into zip archives a maximum file size can be specified. Larger archives will be split into several files of the given size.
+On executing external programs the program can optionally prompt for an elevation to full administrator rights (Windows User Access Control).
+The preset value for new tasks concerning compression of files is user adjustable.
+New option to restrict the backup to files with a modification date/time after the time of the last backup of the associated task.
+New FTP option to use the IPv6 protocol
+The new command line option /portable will automatically create an environment to start the program from a USB stick without leaving any traces behind on the PC.
+The new command line option /elevate prompts on program start to run as administrator
+On backups of directories located on an external drive and using the method Separate directories for drives the names of the subdirectories at destination will be built from the volume name (e.g. G:\Backup\Data-1\..) instead of the drive identifier (e.g. G:\Backup\DrvK\..) as used for fixed disks
+Global preset for drive identifier
+Sizes in bytes will be displayed using the prefixes recommended by IEEE 1541 (KiB,MiB,GiB)
+New file header for non-compressed encrypted files containing the timestamp (remains compatible to previous versions on decryption).
+Restore of non-compressed encrypted files (.enc) will restore original timestamps (e.g. for backups to FTP servers not supporting MFMT).
+Several enhancements in detail and bug fixes</releaseNotes>
+    <!-- =============================== -->      
+
+    <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
+    <!--<dependencies>
+      <dependency id="" version="__MINIMUM_VERSION__" />
+      <dependency id="" version="[__EXACT_VERSION__]" />
+      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_INCLUSIVE]" />
+      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_EXCLUSIVE)" />
+      <dependency id="" />
+      <dependency id="chocolatey-core.extension" version="1.1.0" />
+    </dependencies>-->
+    <!-- chocolatey-core.extension - https://chocolatey.org/packages/chocolatey-core.extension
+         - You want to use Get-UninstallRegistryKey on less than 0.9.10 (in chocolateyUninstall.ps1)
+         - You want to use Get-PackageParameters and on less than 0.11.0
+         - You want to take advantage of other functions in the core community maintainer's team extension package
+    -->
+
+    <!--<provides>NOT YET IMPLEMENTED</provides>-->
+    <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->
+    <!--<replaces>NOT YET IMPLEMENTED</replaces>-->
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+    <!--Building from Linux? You may need this instead: <file src="tools/**" target="tools" />-->
+  </files>
+</package>
