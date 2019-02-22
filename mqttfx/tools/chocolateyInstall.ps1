@@ -1,19 +1,19 @@
-﻿#http://personal-backup.rathlev-home.de/
+﻿#https://www.jensd.de/wordpress/
 
 $ErrorActionPreference = 'Stop'
 
 $packageArgs = @{
-  packageName            = 'personalbackup'
+  packageName            = 'mqttfx'
   fileType               = 'exe'
   unzipLocation 		 = $toolsDir
-  url                    = 'http://personal-backup.rathlev-home.de/download/pb-setup-6.0.0104.exe'
-  url64bit               = 'http://personal-backup.rathlev-home.de/download/pb-setup-x64-6.0.0104.exe'
-  checksum               = '8ead0aad9daa41d68edb906fcdadf64f5bc100edb1ae01ba979b8237dc89d4a8'
-  checksum64             = '9413bcd2e6f4290eae2985836051e456f7ac61f49e303430c1db3e9963705846'
+  url                    = 'http://jensd.de/apps/mqttfx/1.7.1/mqttfx-1.7.1-windows.exe'
+  url64bit               = 'http://jensd.de/apps/mqttfx/1.7.1/mqttfx-1.7.1-windows-x64.exe'
+  checksum               = 'aa3902a2b76e427c4ba90b2b49dd337e95e614ba59f8cd64b5a95b5080766965'
+  checksum64             = '4adfbb0eee65273bead6ce9885cf064de72d00d437bbaf3b9ff5236634fb6057'
   checksumType           = 'sha256'
   checksumType64         = 'sha256'
-  silentArgs             = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /NORUN'
+  silentArgs             = '-q'
   validExitCodes         = @(0)
-  softwareName           = 'personalbackup*'
+  softwareName           = 'mqttfx*'
 }
 Install-ChocolateyPackage @packageArgs
