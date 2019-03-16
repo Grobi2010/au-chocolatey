@@ -20,10 +20,8 @@ function global:au_GetLatest {
     [xml]$webpage = $webclient.DownloadString($releases)
     $url64 = $webpage.rss.channel.item.enclosure | ? { $_.url -Match "\-x64.exe$"} | select Url
     $version = $url64.url.Substring(0,$url64.url.Length-4) -split '/' | select -last 1 -Skip 1
-    
     $url32 = $webpage.rss.channel.item.enclosure | ? { $_.url -Match "\windows.exe$"} | select Url
     
-
     @{
         URL64   = $url64.url
         URL32   = $url32.url
