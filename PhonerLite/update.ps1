@@ -14,14 +14,9 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     
-    # ini File von lite.phoner einlesen
     $webclient = new-object System.Net.WebClient
     $webpage = $webclient.DownloadString($releases) 
-        
-    # Zeile der aktuellen Version selektieren
     $webpage = $webpage -split "`n" | select -First 1 -Skip 2 
-    
-    # Version extrahieren
     $version = ($webpage -split '=' | select -last 1)
 
      @{
