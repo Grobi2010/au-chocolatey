@@ -16,4 +16,5 @@ $packageArgs = @{
   validExitCodes         = @(0)
   softwareName           = 'personalbackup*'
 }
+
 Install-ChocolateyPackage @packageArgs
