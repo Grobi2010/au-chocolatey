@@ -37,7 +37,7 @@ environment:
   gist_id:
 
   # Force test: gist id for test results
-  gist_id_test:https://gist.github.com/Grobi2010/b6dfa51ef5baa4a1537da8b3fabdfd2c
+  gist_id_test: https://gist.github.com/Grobi2010/b6dfa51ef5baa4a1537da8b3fabdfd2c
 
   # Chocolatey API key - to push updated packages
   api_key:
