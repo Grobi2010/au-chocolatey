@@ -13,7 +13,7 @@ $packageArgs = @{
 
   softwareName  = 'PhonerLite*'
 
-  checksum      = '7561002D81A52D82D979C435D78891A7902C1C33988ABF0CC07531E4E21610AC'
+  checksum      = '2e58a59edf817b3f54d0444b649ade866abb51dba9ad1b13a1f143a8cb37cbb1'
   checksumType  = 'sha256'
   silentArgs   = '/VERYSILENT'
 }
