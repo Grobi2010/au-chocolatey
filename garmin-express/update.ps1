@@ -1,7 +1,7 @@
 import-module au
 
 $url = 'https://download.garmin.com/omt/express/GarminExpress.exe'
-$forumsticky = "https://forums.garmin.com/search?searchJSON=%7B%22keywords%22%3A%22Garmin+Express+Release+Notes%22%2C%22title_only%22%3A1%2C%22author%22%3A%5B%22EXPRESSCUSTOMERCARE%22%5D%2C%22channel%22%3A%5B%2250%22%5D%2C%22sort%22%3A%7B%22relevance%22%3A%22desc%22%7D%2C%22view%22%3A%22%22%2C%22exclude_type%22%3A%5B%22vBForum_PrivateMessage%22%5D%7D&btnSubmit="
+$forumsticky = "https://forums.garmin.com/apps-software/mac-windows-software/f/garmin-express-windows/163278/garmin-express-release-notes"
 
 
 function global:au_SearchReplace {
