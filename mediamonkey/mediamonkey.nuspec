@@ -5,7 +5,11 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>mediamonkey</id>
     <title>Mediamonkey (Install)</title>
+<<<<<<< HEAD
     <version>4.1.25</version>
+=======
+    <version>4.1.24</version>
+>>>>>>> 75d03f6580c0082321aa5130d7834fecfc18ac14
     <authors>Ventis Media</authors>
     <owners>Oliver Kötter, Grobi</owners>
     <summary>Mediamonkey</summary>
