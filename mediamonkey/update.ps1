@@ -1,5 +1,6 @@
 import-module au
 
+$NoCheckChocoVersion = 'true'
 $url = 'https://www.mediamonkey.com/MediaMonkey_Setup.exe'
 $forumsticky = "https://www.mediamonkey.com/download"
 
