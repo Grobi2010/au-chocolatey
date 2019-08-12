@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>6.16.01</version>
+    <version>6.16.0</version>
     <packageSourceUrl>https://github.com/Grobi2010/au-chocolatey/tree/master/garmin-express</packageSourceUrl>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Grobi</owners>
@@ -49,7 +49,28 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!--<bugTrackerUrl></bugTrackerUrl>-->
     <tags>garmin geolocation gps drivers mapping admin</tags>
     <summary>Garmin Express is a computer application for easily setting up, registering and managing your Garmin device.</summary>
-    <description>Garmin Express is your one-stop shop for keeping your maps updated. Garmin Express downloads available map updates to your computer automatically, and alerts you when new maps are ready to install. You can even control download schedules. Garmin Express lets you transfer all your favorites from one device to another with one click. It couldn't be simpler. Never lose your data again. Garmin Express makes it easy to back up and restore saved addresses, routes and waypoints to and from your computer.</description>
+    <description>
+	<![CDATA[## Garmin Express 
+	is your one-stop shop for keeping your maps updated. 
+	
+	### Features
+	- downloads available map updates to your computer automatically
+	- alerts you when new maps are ready to install. 
+	- control download schedules. 
+	- transfer all your favorites from one device to another with one click. 
+	
+	### Back up and restore 
+	- saved addresses  
+	- routes 
+	- waypoints 
+	
+	to and from your computer
+	
+	See https://www.garmin.com/de-DE/software/express for all information.
+	
+	]]>
+	
+	</description>
     <releaseNotes>https://forums.garmin.com/forum/garmin-express/garmin-express-pc</releaseNotes>
     <!-- =============================== -->      
 
