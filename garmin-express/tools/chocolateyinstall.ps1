@@ -2,7 +2,7 @@
   packageName   = "garmin-express"
   fileType      = "EXE"
   url			= "https://download.garmin.com/omt/express/GarminExpress.exe"
-  checksum      = '8cff78e1913876a8f7df90f24953f086d2ff5d378363731ffc6727aaf4a77ec8'
+  checksum      = '87ABC9F3ACCD2C0FB967C777C428269FE10B0C0DCD53C79DCDE79A4653DD0CC3'
   checksumType  = 'sha256'
   silentArgs    = '/s /a /s /v"/qb"'
 }
