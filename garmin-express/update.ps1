@@ -1,8 +1,8 @@
 import-module au
 
 $url = 'https://download.garmin.com/omt/express/GarminExpress.exe'
-$forumsticky = "https://forums.garmin.com/apps-software/mac-windows-software/f/garmin-express-windows/170865/garmin-express-release-notes"
-
+# $forumsticky = "https://forums.garmin.com/apps-software/mac-windows-software/f/garmin-express-windows/170865/garmin-express-release-notes"
+$forumsticky = "https://www.computerbild.de/download/Garmin-Express-15153001.html"
 
 function global:au_SearchReplace {
    @{
@@ -15,8 +15,9 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $forumsticky
     
-    $content = $download_page.tostring() -split "[`r`n]" | select-string "Garmin Express v"
-    [regex]$regex = '[0-9][0-9]?.[0-9][0-9]?.[0-9][0-9]?'
+    # $content = $download_page.tostring() -split "[`r`n]" | select-string "Garmin Express v"
+	$content = $download_page.tostring() -split "[`r`n]" | select-string "Version: "
+    [regex]$regex = '[0-9][0-9]?.[0-9][0-9]?.[0-9][0-9]?.[0-9][0-9]?'
     $version = $regex.Matches($content) |ForEach-Object {$_.Value}
     
     @{
