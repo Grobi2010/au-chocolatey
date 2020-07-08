@@ -41,7 +41,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <iconUrl>https://cdn.rawgit.com/criography/chocolatey-packages/v1.4/automatic/garmin-express/icon.png</iconUrl>
     <copyright>Copyright © 1996-2018 Garmin Ltd.</copyright>
     <!-- If there is a license Url available, it is required for the community feed -->
-    <licenseUrl>https://developer.garmin.com/apphttps://static.garmin.com/pumac/EN-US_EN.html</licenseUrl>
+    <licenseUrl>https://static.garmin.com/pumac/EN-US_EN.html</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
     <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
