@@ -71,7 +71,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
 	]]>
 	
 	</description>
-    <releaseNotes>https://forums.garmin.com/forum/garmin-express/garmin-express-pc</releaseNotes>
+    <releaseNotes>https://forums.garmin.com/apps-software/mac-windows-software/f/garmin-express-windows</releaseNotes>
     <!-- =============================== -->      
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
