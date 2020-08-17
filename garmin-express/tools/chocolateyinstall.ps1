@@ -3,7 +3,7 @@
   fileType      = "EXE"
   url			= "https://download.garmin.com/omt/express/GarminExpress.exe"
 
-  checksum      = '0E4A2C4FCB095592169D665A4185D50136512692F71C6D0E33EC6102088F8ABB'
+  checksum      = 'aa9d2f6dbf9b3432785e7023ca85747fa852a2c87b120b86ab7adfde197a39b8'
 
   checksumType  = 'sha256'
   silentArgs    = '/quiet /norestart'
