@@ -76,11 +76,11 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>
 	  <dependency id="dotnetfx" />
+	  <dependency id="dotnet4.7.2" />
 
 	  <!--
       <dependency id="kb2919355" />
 	  <dependency id="dotnet3.5" version="3.5.20160716" />
-	  <dependency id="dotnet4.7.2" />
 	  <dependency id="" version="[__EXACT_VERSION__]" />
       <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_INCLUSIVE]" />
       <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_EXCLUSIVE)" />

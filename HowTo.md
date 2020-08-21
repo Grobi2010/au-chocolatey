@@ -12,3 +12,6 @@ test-package -uninstall
 vagrant sandbox rollback
 
 update_all 
+
+
+vagrant plugin expunge --reinstall
