@@ -19,7 +19,7 @@ function global:au_GetLatest {
     # $content = $download_page.tostring() -split "[`r`n]" | select-string "Garmin Express v"
 	$content = $download_page.tostring() -split "[`r`n]" | select-string "softwareVersion"
     [regex]$regex = '[0-9][0-9]?.[0-9][0-9]?.[0-9][0-9]?.[0-9][0-9]?'
-    $version = $regex.Matches($content) |ForEach-Object {$_.Value}
+    $version = $regex.Match($content) |ForEach-Object {$_.Value}
     
     @{
         URL32   = $url
