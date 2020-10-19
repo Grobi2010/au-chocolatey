@@ -16,7 +16,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $forumsticky
     
-    $content = $download_page.tostring() -split "[`r`n]" | select-string "MediaMonkey for Windows " | Select-Object -First 1
+    $content = $download_page.tostring() -split "[`r`n]" | select-string "MediaMonkey 4." | Select-Object -First 1
     [regex]$regex = '[0-9][0-9]?[.][0-9][0-9]?[.][0-9][0-9]?[.][0-9][0-9][0-9][0-9]?'
     $version = $regex.Matches($content) |ForEach-Object {$_.Value}
     
