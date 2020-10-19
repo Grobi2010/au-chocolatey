@@ -14,7 +14,7 @@
 Manage small to large collections of audio files, videos and playlists (100,000+), whether on a hard drive, network, or CDs. Rip CDs, download podcasts, lookup artwork and other missing information online, tag almost any audio or video format, and automatically rename/re-organize files on your hard drive.
     </description>
     <projectUrl>https://www.mediamonkey.com/</projectUrl>
-    <packageSourceUrl>https://github.com/okoetter/Chocolatey-Packages</packageSourceUrl>
+    <packageSourceUrl>https://github.com/Grobi2010/au-chocolatey/tree/master/garmin-express</packageSourceUrl>
     <tags>media audio video grabber library burn podcast convert party visualize organize rename tag manage mediamonkey admin</tags>
     <copyright>© Copyright 2018 Ventis Media</copyright>
     <licenseUrl>https://www.mediamonkey.com/sw/license.txt</licenseUrl>
