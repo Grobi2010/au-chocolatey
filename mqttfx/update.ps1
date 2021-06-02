@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'http://www.jensd.de/apps/mqttfx/appcast.xml'
+$releases = 'https://www.jensd.de/apps/mqttfx/appcast.xml'
 
 function global:au_SearchReplace {
    @{
