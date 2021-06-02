@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'http://personal-backup.rathlev-home.de/persback.html'
+$releases = 'http://personal-backup.rathlev-home.de/download.html'
 
 function global:au_SearchReplace {
    @{
