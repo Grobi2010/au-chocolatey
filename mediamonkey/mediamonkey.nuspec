@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>mediamonkey</id>
     <title>Mediamonkey (Install)</title>
-    <version>4.1.30.1914</version>
+    <version>5.0.0.2338</version>
     <authors>Ventis Media</authors>
     <owners>Oliver Kötter, Grobi</owners>
     <summary>Mediamonkey</summary>
