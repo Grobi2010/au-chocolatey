@@ -10,7 +10,7 @@ $packageArgs = @{
   silentArgs   = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
   # validExitCodes= @(0)
   softwareName  = 'mediamonkey*'
-  checksum      = '30545d90f20e5f6f402025798171d3f1d8025910f81f9b456e8ea94e9d4264ea'
+  checksum      = '3580c5bee97860fabd5ccdcbdb532de2c2ab31689d5643291d46b1adc3f1a26c'
   checksumType  = 'sha256'
 }
 
