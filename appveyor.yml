@@ -20,7 +20,7 @@ environment:
   # Github token to commit pushed packages to repository New
   github_user_repo: Grobi2010/au-chocolatey
   github_api_key:
-    secure: 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
+    secure: dzXKbf0nqO8zfqCM8ogQE67/983fKmRWXwg1WqJw8UdT1BTiIHd2tZLenfg004O8
 
 
   # Mail credentials - for error notifications
