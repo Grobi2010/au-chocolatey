@@ -16,7 +16,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases
 	
-	$url64 = $download_page.Links | ? href -match '\.exe$' | % href |select -First 1 -skip 1
+	$url64 = $download_page.Links | ? href -match '\.exe$' | % href |select -First 1 -skip 2
     $url32 = $download_page.Links | ? href -match '\.exe$' | % href |select -First 1
     $version = $url32.Substring(0,$url32.Length-4) -split '/' -split '-' | select -last 1
 
