@@ -13,16 +13,16 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $forumsticky -UseBasicParsing
-    
-    $regex = 'Current Version of Garmin Express for Windows: v(?<version>[\d\.]+)'
-    $version = $download_page.Content -match $regex
+
+    $regex = 'Current Version of Garmin Express for Windows:\s+(?<version>[\d\.]+)'
+    if ($download_page.Content -match $regex) {
     $version = $Matches.version
-    
+    }
+
     @{
         URL32   = $url
         Version = $version
     }
 }
 
-
-update
+Update-Package
