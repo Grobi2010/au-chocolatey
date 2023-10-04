@@ -29,7 +29,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <version>7.13.1.0</version>
     <packageSourceUrl>https://github.com/Grobi2010/au-chocolatey/tree/master/garmin-express</packageSourceUrl>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
-    <owners>Grobi</owners>
+    <owners>Grobi virtualex</owners>
     <!-- ============================== -->
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
@@ -37,8 +37,8 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Garmin Ltd.</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://www.garmin.com/en-US/software/express/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/criography/chocolatey-packages/v1.4/automatic/garmin-express/icon.png</iconUrl>
-    <copyright>Copyright © 1996-2022 Garmin Ltd.</copyright>
+    <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/da95d6d15a97b71935643992dcf624e170cf510f/icons/garmin-express.png</iconUrl>
+    <copyright>Copyright © 1996-2023 Garmin Ltd.</copyright>
     <!-- If there is a license Url available, it is required for the community feed -->
     <licenseUrl>https://static.garmin.com/pumac/EN-US_EN.html</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>

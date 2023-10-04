@@ -1,4 +1,6 @@
-﻿$packageArgs = @{
+$ErrorActionPreference = 'Stop'
+ 
+ $packageArgs = @{
   packageName   = "garmin-express"
   fileType      = "EXE"
   url           = "https://download.garmin.com/omt/express/GarminExpress.exe"
